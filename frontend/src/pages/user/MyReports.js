@@ -43,10 +43,11 @@ const MyReports = () => {
 
         {/* Stats */}
         {!loading && reports.length > 0 && (
-          <div className="grid grid-cols-3 gap-4 mb-6">
+          <div className="grid grid-cols-4 gap-4 mb-6">
             {[
               { label: 'Total', value: reports.length, color: 'text-blue-600', bg: 'bg-blue-50 border-blue-100' },
               { label: 'Pending', value: reports.filter(r => r.status === 'Pending').length, color: 'text-yellow-600', bg: 'bg-yellow-50 border-yellow-100' },
+              { label: 'In Progress', value: reports.filter(r => r.status === 'In Progress').length, color: 'text-indigo-600', bg: 'bg-indigo-50 border-indigo-100' },
               { label: 'Completed', value: reports.filter(r => r.status === 'Completed').length, color: 'text-green-600', bg: 'bg-green-50 border-green-100' },
             ].map((s, i) => (
               <div key={i} className={`${s.bg} border rounded-xl p-4 text-center`}>

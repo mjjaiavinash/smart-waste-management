@@ -104,7 +104,7 @@ const Dashboard = () => {
                         <span className={`px-3 py-1 rounded-full text-xs font-semibold border ${statusStyle[report.status] || 'bg-gray-50 text-gray-600 border-gray-200'}`}>
                           {report.status}
                         </span>
-                        <span className="text-xs text-gray-400 hidden sm:block">{new Date(report.created_at).toLocaleDateString()}</span>
+                        <span className="text-xs text-gray-400 hidden sm:block">{new Date(report.createdAt).toLocaleDateString()}</span>
                       </div>
                     </div>
                   ))}

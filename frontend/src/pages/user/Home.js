@@ -10,6 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     if (role === 'admin') { navigate('/dashboard'); return; }
+    if (!isLoggedIn) return;
     getAllReports().then(res => {
       const reports = res.data;
       setStats({
