@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-import { getAllReports } from '../services/api';
-import LoadingSpinner from '../components/LoadingSpinner';
+import { getAllReports } from '../../services/api';
+import LoadingSpinner from '../../components/LoadingSpinner';
 
 const COLORS = ['#16a34a', '#2563eb', '#d97706', '#dc2626', '#7c3aed'];
 

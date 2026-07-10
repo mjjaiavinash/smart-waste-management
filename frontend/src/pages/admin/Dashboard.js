@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { getAllReports, getAllUsers } from '../services/api';
+import { getAllReports, getAllUsers } from '../../services/api';
 import { useNavigate } from 'react-router-dom';
-import LoadingSpinner from '../components/LoadingSpinner';
+import LoadingSpinner from '../../components/LoadingSpinner';
 
 const StatCard = ({ title, value, icon, color, bg }) => (
   <div className={`${bg} rounded-2xl p-6 border border-gray-100`}>

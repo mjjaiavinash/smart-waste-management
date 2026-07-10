@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { getAllUsers, createAdmin, deleteUser } from '../services/api';
-import LoadingSpinner from '../components/LoadingSpinner';
+import { getAllUsers, createAdmin, deleteUser } from '../../services/api';
+import LoadingSpinner from '../../components/LoadingSpinner';
 
 const ManageAdmins = () => {
   const [admins, setAdmins] = useState([]);

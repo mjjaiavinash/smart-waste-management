@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import { getAllReports } from '../services/api';
-import LoadingSpinner from '../components/LoadingSpinner';
+import { getAllReports } from '../../services/api';
+import LoadingSpinner from '../../components/LoadingSpinner';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 

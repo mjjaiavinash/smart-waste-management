@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { getAllReports, updateReportStatus, deleteReport } from '../services/api';
-import LoadingSpinner from '../components/LoadingSpinner';
+import { getAllReports, updateReportStatus, deleteReport } from '../../services/api';
+import LoadingSpinner from '../../components/LoadingSpinner';
 
 const AdminReports = () => {
   const [reports, setReports] = useState([]);

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { getAllReports } from '../services/api';
+import { getAllReports } from '../../services/api';
 
 const Home = () => {
   const navigate = useNavigate();

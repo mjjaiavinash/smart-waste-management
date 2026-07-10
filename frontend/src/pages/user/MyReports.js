@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import ReportCard from '../components/ReportCard';
-import { getMyReports } from '../services/api';
+import ReportCard from '../../components/ReportCard';
+import { getMyReports } from '../../services/api';
 import { useNavigate } from 'react-router-dom';
-import LoadingSpinner from '../components/LoadingSpinner';
+import LoadingSpinner from '../../components/LoadingSpinner';
 
 const MyReports = () => {
   const [reports, setReports] = useState([]);
